@@ -14,13 +14,13 @@ reverseString = () => {
 	console.log('fjdhfjdhfjk');
 	var str = document.getElementById('string').value;
 	console.log(str);
-	var splitString = str.split(''); // var splitString = "hello".split("");
+	var splitString = str.split('');
 	console.log(splitString);
-	var reverseArray = splitString.reverse(); // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
+	var reverseArray = splitString.reverse();
 	console.log(reverseArray);
-	var joinArray = reverseArray.join(''); // var joinArray = ["o", "l", "l", "e", "h"].join("")
+	var joinArray = reverseArray.join('');
 	console.log(joinArray);
-	return joinArray; // "olleh"
+	return joinArray; 
 };
 
 //looping a triangle
