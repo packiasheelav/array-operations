@@ -1,4 +1,4 @@
-function arraytolist() {
+arraytolist = () => {
 	Arr = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven'];
 	ArrLen = Arr.length;
 	var tList = '';
@@ -7,7 +7,7 @@ function arraytolist() {
 		if (ArrLen != i + 1) tList += ',';
 	}
 	console.log(JASON.stringify({ tList }));
-}
+};
 
 reverseString = () => {
 	console.log('fjdhfjdhfjk');
@@ -22,15 +22,22 @@ reverseString = () => {
 	return joinArray; // "olleh"
 };
 
-function loopingatriangle() {
-    for (i = 1; i <= 7; i++) {
-        var str = "";
-        for (j = 1; j <= i; j++) {
-            str += "#";
-            document.write("#");
-        }
-        document.write("<br>");
-        console.log(str)
-    }
- }
- 
+loopingatriangle = () => {
+	for (i = 1; i <= 7; i++) {
+		var str = '';
+		for (j = 1; j <= i; j++) {
+			str += '#';
+			document.write('#');
+		}
+		document.write('<br>');
+		console.log(str);
+	}
+};
+comparingArrays = () => {
+	let a1 = ['1', '2', '3'];
+	let a2 = ['1', '2', '3', '4'];
+	//using join method
+	console.log(a1.join('') === a2.join(''));
+	//using toString method
+	console.log(a1.toString() === a2.toString());
+};
