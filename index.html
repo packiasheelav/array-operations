@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="scripts.js"></script>
     <title>
         Array Operations </title>
     <link rel="stylesheet" href="style.css">
@@ -11,15 +10,17 @@
     <head>
     </head>
     <div>
-        <input type="text" id="string" onblur="reverseString()" placeholder="give a string.." title="Type in a name">
         <ul id='arrayOperations'>
-            <li id='1'>Reversing a String</li>
+            <li id='1' onClick="reverseString('hello')">Reversing a String</li>
+            <li id='2' onClick="textLength()">length of text with space and without spaace </li>
+            
             <li id='2' onClick="arraytolist()">Array To List </li>
-            <li id='3'>ChessBoard</li>
+            <li id='3' onClick="fizzBuzz()">FizzBuzz</li>
+            <li id='2' onClick="isPalindrome('madam')">Is Palindrome </li>
+            <li id='4' onClick="maxCharacters()">Looping a Triangle</li>
             <li id='4' onClick="loopingatriangle()">Looping a Triangle</li>
             <li id='5'onClick="comparingArrays()">Comparing Arrays</li>
         </ul>
-
     </div>
     <script src="script.js"></script>
     </body>
